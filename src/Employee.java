@@ -1,11 +1,11 @@
 public class Employee extends Person {
-    private String department;
-    private int id;
-    private int salary;
+    public String department;
+    public int id;
+    public int salary;
 
     public Employee(String name, int age, String department, int salary, int id) {
-        name = this.getFullName();
-        age = this.getAge();
+        name = this.fullName;
+        age = this.age;
         department = this.department;
         salary = this.salary;
         id = this.id;
@@ -38,8 +38,8 @@ public class Employee extends Person {
     @Override
     public String toString() {
         return "Employee{" +
-                "name=" + getFullName()  +
-                ", age=" + getAge() +
+                "name=" + fullName  +
+                ", age=" + age +
                 ", department='" + department  +
                 ", id=" + id +
                 ", salary=" + salary +

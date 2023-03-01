@@ -1,6 +1,6 @@
 public class Person {
-    private String fullName;
-    private int age;
+    public String fullName;
+    public int age;
 
     public String getFullName() {
         return fullName;
